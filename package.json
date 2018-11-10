@@ -1,9 +1,15 @@
 {
   "name": "object-fit-container",
-  "version": "1.0.5",
+  "version": "1.0.1",
   "main": "index.js",
   "author": "Maksim Arzamastsev <arzamax@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arzamax/object-fit-container"
+  },
+  "homepage": "https://github.com/arzamax/object-fit-container#readme",
+  "bugs": "https://github.com/arzamax/object-fit-container/issues",
   "files": [
     "lib",
     "index.js"
