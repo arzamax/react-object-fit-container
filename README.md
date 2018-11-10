@@ -1,4 +1,6 @@
-### "object-fit: cover" polyfill for react
+## "object-fit: cover" polyfill for react
+
+Image or Video takes 100% height and width of container;
 
 ```javascript
 import { Image, Video } from "object-fit-container";
