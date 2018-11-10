@@ -1,0 +1,23 @@
+{
+  "name": "object-fit-container",
+  "version": "1.0.5",
+  "main": "index.js",
+  "author": "Maksim Arzamastsev <arzamax@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "lib",
+    "index.js"
+  ],
+  "types": "./lib/ObjectFitContainer.d.ts",
+  "scripts": {
+    "build": "rm -rf ./lib/* && tsc",
+    "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@types/react": "^16.7.2",
+    "react": "^16.6.1",
+    "tslint": "^5.11.0",
+    "tslint-react": "^3.6.0",
+    "typescript": "^3.1.6"
+  }
+}
