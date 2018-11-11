@@ -1,5 +1,5 @@
 {
-  "name": "react-object-fit-container",
+  "name": "object-fit-container",
   "version": "1.0.2",
   "main": "index.js",
   "author": "Maksim Arzamastsev <arzamax@gmail.com>",
@@ -14,7 +14,7 @@
     "lib",
     "index.js"
   ],
-  "types": "./lib/ObjectFitContainer.d.ts",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "build": "rm -rf ./lib/* && tsc",
     "prepare": "yarn build"
