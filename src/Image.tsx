@@ -2,16 +2,11 @@ import * as React from 'react';
 
 import { ObjectFitWrapper, verticalAlignType, horizontalAlignType } from "./ObjectFitWrapper";
 
-interface ImageProps {
-  verticalAlign?: verticalAlignType,
-  horizontalAlign?: horizontalAlignType,
-}
-
 interface ImageState {
   ratio: number | null
 }
 
-export class Image extends React.PureComponent<ImageProps, ImageState> {
+export class Image extends React.PureComponent<any, ImageState> {
 
   public image  = React.createRef<HTMLImageElement>();
 

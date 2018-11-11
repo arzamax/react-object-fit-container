@@ -2,17 +2,11 @@ import * as React from 'react';
 
 import { ObjectFitWrapper, verticalAlignType, horizontalAlignType } from "./ObjectFitWrapper";
 
-interface VideoProps {
-  children: React.ReactNode,
-  verticalAlign?: verticalAlignType,
-  horizontalAlign?: horizontalAlignType,
-}
-
 interface VideoState {
   ratio: number | null
 }
 
-export class Video extends React.PureComponent<VideoProps, VideoState> {
+export class Video extends React.PureComponent<any, VideoState> {
 
   public video = React.createRef<HTMLVideoElement>();
 
