@@ -3,8 +3,8 @@ import * as React from 'react';
 import { ObjectFitWrapper, verticalAlignType, horizontalAlignType } from "./ObjectFitWrapper";
 
 interface ImageProps {
-  verticalAlign: verticalAlignType,
-  horizontalAlign: horizontalAlignType,
+  verticalAlign?: verticalAlignType,
+  horizontalAlign?: horizontalAlignType,
 }
 
 interface ImageState {

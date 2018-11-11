@@ -4,8 +4,8 @@ import { ObjectFitWrapper, verticalAlignType, horizontalAlignType } from "./Obje
 
 interface VideoProps {
   children: React.ReactNode,
-  verticalAlign: verticalAlignType,
-  horizontalAlign: horizontalAlignType,
+  verticalAlign?: verticalAlignType,
+  horizontalAlign?: horizontalAlignType,
 }
 
 interface VideoState {
