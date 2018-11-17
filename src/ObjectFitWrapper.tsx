@@ -5,17 +5,17 @@ export type horizontalAlignType = 'left' | 'right';
 type positionAbsoluteParamType = number | 'auto' | null;
 
 interface ObjectFitWrapperProps {
-  children: React.ReactNode,
-  ratio: number | null,
-  verticalAlign?: verticalAlignType,
-  horizontalAlign?: horizontalAlignType
+  children: React.ReactNode;
+  ratio: number | null;
+  verticalAlign?: verticalAlignType;
+  horizontalAlign?: horizontalAlignType;
 }
 
 interface ObjectFitWrapperState {
-  width: number | null,
-  height: number | null,
-  left: positionAbsoluteParamType,
-  top: positionAbsoluteParamType
+  width: number | null;
+  height: number | null;
+  left: positionAbsoluteParamType;
+  top: positionAbsoluteParamType;
 }
 
 export class ObjectFitWrapper extends React.PureComponent<ObjectFitWrapperProps, ObjectFitWrapperState> {
@@ -104,7 +104,7 @@ export class ObjectFitWrapper extends React.PureComponent<ObjectFitWrapperProps,
         });
       }
     }
-  };
+  }
 
   public renderElement() {
     const { children } = this.props;
@@ -115,6 +115,7 @@ export class ObjectFitWrapper extends React.PureComponent<ObjectFitWrapperProps,
 
     return React.Children.map(children, (child: React.ReactElement<any>) =>
       React.cloneElement(child, {
+        ...child.props,
         style,
       }),
     );
@@ -127,7 +128,7 @@ export class ObjectFitWrapper extends React.PureComponent<ObjectFitWrapperProps,
           position: 'relative',
           width: '100%',
           height: '100%',
-          overflow: 'hidden'
+          overflow: 'hidden',
         }}
         ref={this.container}
       >

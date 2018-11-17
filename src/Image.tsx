@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ObjectFitWrapper, verticalAlignType, horizontalAlignType } from "./ObjectFitWrapper";
 
 interface ImageState {
-  ratio: number | null
+  ratio: number | null;
 }
 
 export class Image extends React.PureComponent<any, ImageState> {
@@ -11,7 +11,7 @@ export class Image extends React.PureComponent<any, ImageState> {
   public image  = React.createRef<HTMLImageElement>();
 
   public state = {
-    ratio: null
+    ratio: null,
   };
 
   public componentDidMount() {
@@ -21,9 +21,9 @@ export class Image extends React.PureComponent<any, ImageState> {
       const { width, height } = image;
 
       this.setState({
-        ratio: width / height
-      })
-    })
+        ratio: width / height,
+      });
+    });
   }
 
   public render() {
@@ -34,6 +34,6 @@ export class Image extends React.PureComponent<any, ImageState> {
       <ObjectFitWrapper ratio={ratio} verticalAlign={verticalAlign} horizontalAlign={horizontalAlign}>
         <img {...this.props} ref={this.image} />
       </ObjectFitWrapper>
-    )
+    );
   }
 }

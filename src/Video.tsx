@@ -3,7 +3,7 @@ import * as React from 'react';
 import { ObjectFitWrapper, verticalAlignType, horizontalAlignType } from "./ObjectFitWrapper";
 
 interface VideoState {
-  ratio: number | null
+  ratio: number | null;
 }
 
 export class Video extends React.PureComponent<any, VideoState> {
@@ -11,7 +11,7 @@ export class Video extends React.PureComponent<any, VideoState> {
   public video = React.createRef<HTMLVideoElement>();
 
   public state = {
-    ratio: null
+    ratio: null,
   };
 
   public componentDidMount() {
@@ -21,9 +21,9 @@ export class Video extends React.PureComponent<any, VideoState> {
       const { videoWidth, videoHeight } = video;
 
       this.setState({
-        ratio: videoWidth / videoHeight
-      })
-    })
+        ratio: videoWidth / videoHeight,
+      });
+    });
   }
 
   public render() {
@@ -36,6 +36,6 @@ export class Video extends React.PureComponent<any, VideoState> {
           {children}
         </video>
       </ObjectFitWrapper>
-    )
+    );
   }
 }
