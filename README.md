@@ -1,11 +1,14 @@
-## "object-fit: cover" polyfill for react
+# "object-fit: cover" polyfill for react
 
 Image or Video takes 100% height and width of container;
 
 ## Install
 
-#### yarn add react-object-fit-container 
-#### npm install react-object-fit-container
+```javascript
+yarn add react-object-fit-container 
+npm install react-object-fit-container
+```
+## Usage
 
 ```javascript
 import { Image, Video } from "react-object-fit-container";
@@ -23,7 +26,7 @@ render() {
 }
 ```
 
-You can manually use ObjectFitWrapper, just take ratio from child image/video and set to ObjecFitWrapper's prop <b>ratio</b>:
+You can manually use ObjectFitWrapper just take ratio from child image/video and set to ObjecFitWrapper's prop <b>ratio</b>:
 
 ```javascript
 import { ObjectFitWrapper } from "react-object-fit-container";
